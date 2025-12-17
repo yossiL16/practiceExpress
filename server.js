@@ -163,7 +163,7 @@ app.delete('/secure/resource', (req, res) => {
 /**
  * (Optional) Catch-all for unknown routes
  */
-app.all('*', (req, res) => {
+app.all('', (req, res) => {
     res.status(404).json({
         error: 'Route not found.',
         message: 'This is a demo server. Available endpoints:',
